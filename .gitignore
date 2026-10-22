@@ -1,0 +1,20 @@
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# KiCad user state, caches, locks, autosaves, and backups
+*.kicad_prl
+fp-info-cache
+~*.lck
+*.lck
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+_autosave-*
+*-save.*
+*-unsaved-export-*
+
+# KiCad Fabrication Toolkit local plugin settings
+fabrication-toolkit-options.json

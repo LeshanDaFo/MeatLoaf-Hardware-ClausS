@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Meatloaf") (type "KiCad") (uri "${KIPRJMOD}/Meatloaf.pretty") (options "") (descr ""))
+)
