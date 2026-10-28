@@ -13,6 +13,27 @@ The underlying MeatLoaf firmware project is maintained at [idolpx/meatloaf](http
 
 These are the **intended environment names**. Publish binaries only after their configuration and partition layout have been verified for the target hardware.
 
+## PCB v1.0 firmware packages
+
+The packages dated `20261029.06` are the current PCB v1.0 firmware update. They
+include the upstream SD-card SPI CRC initialization compatibility fix from
+[MeatLoaf pull request #69](https://github.com/idolpx/meatloaf/pull/69).
+The packages dated `20261020.18` remain available as the historical initial
+release.
+
+| Package set | N8R8 | N16R8 | Status |
+| --- | --- | --- | --- |
+| 2026-10-29 SD CRC update | `meatloaf.meatloaf-claus-s3-pcb-v1_0-n8r8.20261029.06.zip` | `meatloaf.meatloaf-claus-s3-pcb-v1_0-n16r8.20261029.06.zip` | Built and statically verified; PCB v1.0 SDXC compatibility test passed |
+| 2026-10-20 initial release | `meatloaf.meatloaf-claus-s3-pcb-v1_0-n8r8.20261020.18.zip` | `meatloaf.meatloaf-claus-s3-pcb-v1_0-n16r8.20261020.18.zip` | Historical release |
+
+The updated packages report firmware version `1.4.8311ea72` and build commit
+`c5835474`. They were built with PlatformIO Espressif32 `6.13.0`, ESP-IDF
+`5.5.3`, and LittleFS. See
+[`RELEASE-NOTES-20261029-SD-CRC.md`](v1.0/RELEASE-NOTES-20261029-SD-CRC.md)
+for the exact scope and test status, and
+[`SHA256SUMS-20261029-SD-CRC.txt`](v1.0/SHA256SUMS-20261029-SD-CRC.txt) for
+download verification.
+
 ## Identifying the memory variant
 
 The memory suffix describes the module configuration, not the carrier-board
