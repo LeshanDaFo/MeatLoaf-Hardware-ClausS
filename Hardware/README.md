@@ -14,6 +14,15 @@ Hardware/
 │   ├── KiCad/        # Editable KiCad project, schematics, and PCB layout
 │   ├── PDF/          # PDF documentation, including schematic exports
 │   └── Production/   # PCB manufacturing and assembly files, including Gerbers and BOMs
+├── PCB-v1.1a/
+├── PCB-v1.1b/
+├── PCB-v1.1c/
+│   ├── README.md     # Revision-specific design and validation status
+│   ├── 3D/           # Complete mechanical STEP assembly
+│   ├── Images/       # Verified KiCad rendering
+│   ├── KiCad/        # Editable KiCad project and local dependencies
+│   ├── PDF/          # Relevant component documentation
+│   └── Production/   # Revision-specific manufacturing export
 └── README.md
 ```
 
@@ -22,11 +31,15 @@ Hardware/
 | Revision | Status | Documentation | Design and production files |
 | --- | --- | --- | --- |
 | PCB v1.0 | Published | [Compatibility, assembly, and GPIO assignments](PCB-v1.0/README.md) | [KiCad](PCB-v1.0/KiCad/) · [Schematic PDF](PCB-v1.0/PDF/Meatloaf-PCB-v1.0-Schematic.pdf) · [Production](PCB-v1.0/Production/) · [3D](PCB-v1.0/3D/) · [Images](PCB-v1.0/Images/) |
+| PCB v1.1a | Discrete IEC input stages | [Design and firmware](PCB-v1.1a/README.md) | [KiCad](PCB-v1.1a/KiCad/) · [3D assembly](PCB-v1.1a/3D/Meatloaf-PCB-v1.1a-Assembly.step) · [Production](PCB-v1.1a/Production/) · [Images](PCB-v1.1a/Images/) |
+| PCB v1.1b | 74LVC541A IEC input buffer | [Design, GPIO assignments, and validation status](PCB-v1.1b/README.md) | [KiCad](PCB-v1.1b/KiCad/) · [3D assembly](PCB-v1.1b/3D/Meatloaf-PCB-v1.1b-Assembly.step) · [Production](PCB-v1.1b/Production/) · [Images](PCB-v1.1b/Images/) |
+| PCB v1.1c | USB-C power input and plug-in W5500 module | [Design and firmware](PCB-v1.1c/README.md) | [KiCad](PCB-v1.1c/KiCad/) · [3D assembly](PCB-v1.1c/3D/Meatloaf-PCB-v1.1c-Assembly.step) · [Production](PCB-v1.1c/Production/) · [Images](PCB-v1.1c/Images/) |
 
-![Current published MeatLoaf carrier board](PCB-v1.0/Images/PCB-3D-Top.png)
+![MeatLoaf PCB v1.1b development design](PCB-v1.1b/Images/PCB-v1.1b-KiCad-3D.png)
 
-*The image shows the currently published PCB v1.0 revision. It may be replaced
-when a newer revision becomes the current reference design.*
+*KiCad rendering of the revised PCB v1.1b with the RGB level shifter.*
+
+![MeatLoaf PCB v1.1c](PCB-v1.1c/Images/PCB-v1.1c-KiCad-3D-perspective.png)
 
 Each revision directory is self-contained and normally uses the following
 structure:
@@ -40,8 +53,8 @@ structure:
   other production-related files where provided.
 
 Future PCB revisions can be added as separate directories alongside
-`PCB-v1.0/`. Do not mix documentation, design files, or manufacturing outputs
-from different revisions.
+`PCB-v1.0/`, `PCB-v1.1a/`, `PCB-v1.1b/`, and `PCB-v1.1c/`. Do not mix documentation, design files, or
+manufacturing outputs from different revisions.
 
 ## Hardware overview
 

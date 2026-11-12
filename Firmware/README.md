@@ -10,6 +10,8 @@ The underlying MeatLoaf firmware project is maintained at [idolpx/meatloaf](http
 | --- | --- | --- | --- |
 | PCB v1.0, N8R8 | `meatloaf-claus-s3-pcb-v1_0-n8r8` | 8 MB | 8 MB |
 | PCB v1.0, N16R8 | `meatloaf-claus-s3-pcb-v1_0-n16r8` | 16 MB | 8 MB |
+| PCB v1.1a / v1.1b / v1.1c, N8R8 | `meatloaf-claus-s3-pcb-v1_1-n8r8` | 8 MB | 8 MB |
+| PCB v1.1a / v1.1b / v1.1c, N16R8 | `meatloaf-claus-s3-pcb-v1_1-n16r8` | 16 MB | 8 MB |
 
 These are the **intended environment names**. Publish binaries only after their configuration and partition layout have been verified for the target hardware.
 
@@ -56,10 +58,18 @@ following every detail of Espressif's naming scheme.
 The module marking is a useful first indication. Before selecting a package,
 verify it against the following mapping whenever possible:
 
-| Detected hardware | Firmware variant |
-| --- | --- |
-| ESP32-S3 with 8 MB flash and 8 MB PSRAM | `meatloaf-claus-s3-pcb-v1_0-n8r8` |
-| ESP32-S3 with 16 MB flash and 8 MB PSRAM | `meatloaf-claus-s3-pcb-v1_0-n16r8` |
+| Carrier revision | Detected module | Firmware variant |
+| --- | --- | --- |
+| PCB v1.0 | ESP32-S3 with 8 MB flash and 8 MB PSRAM | `meatloaf-claus-s3-pcb-v1_0-n8r8` |
+| PCB v1.0 | ESP32-S3 with 16 MB flash and 8 MB PSRAM | `meatloaf-claus-s3-pcb-v1_0-n16r8` |
+| PCB v1.1a / v1.1b / v1.1c | ESP32-S3 with 8 MB flash and 8 MB PSRAM | `meatloaf-claus-s3-pcb-v1_1-n8r8` |
+| PCB v1.1a / v1.1b / v1.1c | ESP32-S3 with 16 MB flash and 8 MB PSRAM | `meatloaf-claus-s3-pcb-v1_1-n16r8` |
+
+Check [v1.1 SPI compatibility](v1.1/README.md#spi3-hardware) before selecting
+a package. The current v1.1 hardware designs use dedicated W5500 SPI3.
+
+PCB v1.0 and the v1.1 family have different GPIO and interface configurations and
+their packages are not interchangeable.
 
 If either memory size is unknown, or if the detected configuration differs
 from both rows, do not select either firmware variant without further
@@ -214,9 +224,9 @@ prove that the physical module has no PSRAM; check the module marking or vendor
 documentation as well.
 
 Select a firmware package only after identifying both the carrier revision and
-the module's flash capacity. The packages currently published here target
-N8R8 and N16R8 configurations; another physically compatible DevKitC-1 variant
-is not automatically supported by those packages.
+the module's flash capacity. The packages provided here target N8R8 and N16R8
+configurations; another physically compatible DevKitC-1 variant is not
+automatically supported by those packages.
 
 ## Web flashing
 
@@ -249,6 +259,20 @@ pio run -e meatloaf-claus-s3-pcb-v1_0-n16r8 -t uploadfs --upload-port /dev/cu.us
 ```bash
 pio run -e meatloaf-claus-s3-pcb-v1_0-n8r8 -t upload --upload-port /dev/cu.usbserial-0001
 pio run -e meatloaf-claus-s3-pcb-v1_0-n8r8 -t uploadfs --upload-port /dev/cu.usbserial-0001
+```
+
+**PCB v1.1 family — N16R8**
+
+```bash
+pio run -e meatloaf-claus-s3-pcb-v1_1-n16r8 -t upload --upload-port /dev/cu.usbserial-0001
+pio run -e meatloaf-claus-s3-pcb-v1_1-n16r8 -t uploadfs --upload-port /dev/cu.usbserial-0001
+```
+
+**PCB v1.1 family — N8R8**
+
+```bash
+pio run -e meatloaf-claus-s3-pcb-v1_1-n8r8 -t upload --upload-port /dev/cu.usbserial-0001
+pio run -e meatloaf-claus-s3-pcb-v1_1-n8r8 -t uploadfs --upload-port /dev/cu.usbserial-0001
 ```
 
 `upload` writes the firmware; `uploadfs` writes the filesystem image, including web-interface assets where provided by the build. A complete installation may require both.

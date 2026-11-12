@@ -6,16 +6,14 @@ MeatLoaf is an ESP32-based interface for Commodore computers. It connects to the
 
 This repository contains an independent hardware implementation maintained by Claus Schlereth. The original MeatLoaf firmware is developed separately in the upstream MeatLoaf repository.
 
-![Current published MeatLoaf carrier board](Hardware/PCB-v1.0/Images/PCB-3D-Perspective.png)
-
-*The image shows the currently published PCB v1.0 revision. It may be replaced
-when a newer hardware revision becomes the current reference design.*
-
 ## Available hardware revisions
 
 | Revision | Status | Hardware documentation | Firmware |
 | --- | --- | --- | --- |
 | PCB v1.0 | Published | [Documentation](Hardware/PCB-v1.0/README.md) · [KiCad files](Hardware/PCB-v1.0/KiCad/) · [Production files](Hardware/PCB-v1.0/Production/) | [Firmware packages](Firmware/v1.0/) · [Installation instructions](Firmware/README.md) |
+| PCB v1.1a | Discrete IEC input stages | [Hardware package](Hardware/PCB-v1.1a/README.md) | [SPI3 firmware compatibility](Firmware/v1.1/README.md#spi3-hardware) |
+| PCB v1.1b | 74LVC541A IEC input buffer | [Hardware package](Hardware/PCB-v1.1b/README.md) | [SPI3 firmware compatibility](Firmware/v1.1/README.md#spi3-hardware) |
+| PCB v1.1c | USB-C power input and plug-in W5500 module | [Hardware package](Hardware/PCB-v1.1c/README.md) | [SPI3 firmware compatibility](Firmware/v1.1/README.md#spi3-hardware) |
 
 Each hardware revision has its own design, documentation, images, and manufacturing files. Files from different revisions must not be mixed.
 
@@ -23,6 +21,25 @@ The table above is the starting point for revision-specific compatibility,
 placement, GPIO assignments, schematics, PCB images, KiCad sources, 3D data,
 and manufacturing files. The [hardware overview](Hardware/README.md) provides a
 revision-independent index of the available design material.
+
+### PCB v1.1a
+
+PCB v1.1a uses discrete BC847BS stages for the IEC inputs.
+
+![PCB v1.1a KiCad rendering](Hardware/PCB-v1.1a/Images/PCB-v1.1a-KiCad-3D.png)
+
+### PCB v1.1b
+
+PCB v1.1b replaces the discrete IEC input stages of v1.1a with a 74LVC541A
+buffer and retains the BC847BS output stages.
+
+![PCB v1.1b KiCad rendering](Hardware/PCB-v1.1b/Images/PCB-v1.1b-KiCad-3D.png)
+
+### PCB v1.1c
+
+PCB v1.1c adds USB-C power, a plug-in W5500 Mini module and two RGB headers.
+
+![PCB v1.1c KiCad rendering](Hardware/PCB-v1.1c/Images/PCB-v1.1c-KiCad-3D-perspective.png)
 
 ## Getting started
 
@@ -63,7 +80,16 @@ or memory configuration is suitable for another.
 .
 ├── Hardware/
 │   ├── README.md
-│   └── PCB-v1.0/
+│   ├── PCB-v1.0/
+│   │   ├── README.md
+│   │   ├── 3D/
+│   │   ├── Images/
+│   │   ├── KiCad/
+│   │   ├── PDF/
+│   │   └── Production/
+│   ├── PCB-v1.1a/
+│   ├── PCB-v1.1b/
+│   └── PCB-v1.1c/
 │       ├── README.md
 │       ├── 3D/
 │       ├── Images/
@@ -72,20 +98,22 @@ or memory configuration is suitable for another.
 │       └── Production/
 ├── Firmware/
 │   ├── README.md
-│   └── v1.0/
+│   ├── v1.0/
+│   └── v1.1/
 ├── LICENSE.md
 └── LIZENZ.md
 ```
 
-Future hardware revisions will be added as separate directories, for example `Hardware/PCB-v1.1/` or `Hardware/PCB-v2.0/`.
+Future published hardware revisions will continue to use separate directories.
 
 ## Revision history
 
 | Date | Revision | Summary |
 | --- | --- | --- |
 | 2026-10-21 | PCB v1.0 | Initial published hardware revision with KiCad sources, schematic PDF, PCB images, 3D assembly, production files, and N8R8/N16R8 firmware packages |
+| 2026-11-11 | PCB v1.1a, v1.1b and v1.1c | Dedicated W5500 SPI3 bus, updated KiCad projects, manufacturing files, and 3D assets |
 
-Detailed technical changes should be documented with the files for the corresponding hardware revision. This table records only published repository revisions.
+Each hardware revision has its own technical documentation.
 
 ## Project status
 
