@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MeatLoaf Carrier Board Web Flasher</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="flasher.js"></script>
+</head>
+<body>
+  <main>
+    <h1>MeatLoaf Carrier Board</h1>
+    <p class="subtitle">Firmware installer</p>
+    <div class="choices">
+      <label>Carrier board
+        <select id="board">
+          <option value="">Select your board</option>
+          <option value="v1.0">PCB v1.0</option>
+          <option value="v1.1">PCB v1.1a / v1.1b / v1.1c</option>
+        </select>
+      </label>
+      <label>ESP32-S3 module
+        <select id="module">
+          <option value="">Select your module</option>
+          <option value="n8r8">N8R8 · 8 MB flash</option>
+          <option value="n16r8">N16R8 · 16 MB flash</option>
+        </select>
+      </label>
+    </div>
+    <p>Check the module marking before installing. Connect the board with a USB data cable and close any serial monitor.</p>
+    <p id="status" role="status">Loading firmware catalog…</p>
+    <section id="package" hidden aria-label="Selected firmware">
+      <h2 id="name"></h2>
+      <p id="details"></p>
+      <p>Installation replaces the internal LittleFS contents. Back up any files you want to keep.</p>
+      <div class="actions">
+        <esp-web-install-button hidden>
+          <button slot="activate" type="button">Connect and install</button>
+        </esp-web-install-button>
+        <a id="download">Download ZIP</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+name: Deploy Carrier Webflasher
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Webflasher/**'
+      - '.github/workflows/webflasher.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare verified public firmware
+        run: python3 Webflasher/prepare.py
+      - name: Stage the webflasher
+        run: |
+          mkdir site
+          cp Webflasher/index.html Webflasher/style.css Webflasher/flasher.js site/
+          cp -r Webflasher/firmware site/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -64,6 +64,8 @@ The files under `Production/` are intended for PCB manufacturing and assembly. T
 
 ## Firmware
 
+[Open the MeatLoaf Carrier Webflasher](https://leshandafo.github.io/MeatLoaf-Hardware-ClausS/) to install firmware directly from your browser.
+
 Firmware packages are hardware-specific and may also differ by flash capacity,
 PSRAM capacity, GPIO assignments, and other board configuration details. A
 development-board name or matching connector position alone does not determine

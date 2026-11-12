@@ -230,6 +230,8 @@ automatically supported by those packages.
 
 ## Web flashing
 
+Open the [MeatLoaf Carrier Webflasher](https://leshandafo.github.io/MeatLoaf-Hardware-ClausS/) in desktop Chrome or Edge and select your PCB family and ESP32-S3 module.
+
 A flashable ZIP package can be installed using the web flasher at [meatloaf.cc](https://meatloaf.cc/) on a compatible browser and supported USB connection.
 
 1. Identify the PCB revision and the memory variant printed on the removable ESP32-S3 module. Do not infer the memory capacity from the carrier-board silkscreen; see [Identifying the memory variant](#identifying-the-memory-variant).

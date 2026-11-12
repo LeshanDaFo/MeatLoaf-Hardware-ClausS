@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #eef3f1; color: #162923; font: 1rem/1.55 system-ui, sans-serif; }
+main { max-width: 47rem; margin: clamp(1rem, 8vh, 5rem) auto; padding: clamp(1.25rem, 5vw, 3rem); background: #fff; border-top: .35rem solid #14664e; }
+h1, h2, p { margin: 0 0 1rem; }
+h1 { font-size: clamp(1.9rem, 6vw, 3rem); line-height: 1.1; letter-spacing: -.045em; }
+h2 { font-size: 1.25rem; }
+.subtitle { color: #3c5650; margin-bottom: 2rem; }
+.choices, .actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.choices { margin-bottom: 1rem; }
+label { flex: 1 1 14rem; font-weight: 650; }
+select, button { display: block; margin-top: .35rem; padding: .7rem; border: 1px solid #526b61; border-radius: .35rem; font: inherit; }
+select { width: 100%; background: #fff; color: inherit; }
+button { background: #14664e; color: #fff; cursor: pointer; }
+a { color: #14664e; }
+section { padding: 1.25rem; background: #eef5f1; }
+[hidden] { display: none !important; }
