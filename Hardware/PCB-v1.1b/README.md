@@ -4,11 +4,11 @@ PCB v1.1b replaces the discrete IEC input stages of [v1.1a](../PCB-v1.1a/README.
 with a 74LVC541A buffer. It retains the BC847BS open-collector output stages,
 the W5500 header and the 5 V RGB data level shifter.
 
+![Complete top view of PCB v1.1b](Images/PCB-v1.1b-KiCad-3D-top.png)
+
 ![PCB v1.1b with two Commodore IEC DIN sockets in the foreground](Images/PCB-v1.1b-IEC-perspective.png)
 
 *The two round 6-pin DIN sockets in the foreground connect to the Commodore IEC bus.*
-
-[Additional 3D view](Images/PCB-v1.1b-KiCad-3D.png)
 
 The rendering and STEP assembly include the female socket strips beneath the
 ESP32-S3 development board so that its installed height is represented.

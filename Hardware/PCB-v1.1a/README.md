@@ -4,11 +4,11 @@ PCB v1.1a uses discrete BC847BS stages for the IEC inputs.
 The IEC outputs use separate BC847BS open-collector stages. The microSD
 socket uses SPI2. The W5500 header uses SPI3.
 
+![Complete top view of PCB v1.1a](Images/PCB-v1.1a-KiCad-3D-top.png)
+
 ![PCB v1.1a with two Commodore IEC DIN sockets in the foreground](Images/PCB-v1.1a-IEC-perspective.png)
 
 *The two round 6-pin DIN sockets in the foreground connect to the Commodore IEC bus.*
-
-[Additional 3D view](Images/PCB-v1.1a-KiCad-3D.png)
 
 ## Changes from PCB v1.0
 

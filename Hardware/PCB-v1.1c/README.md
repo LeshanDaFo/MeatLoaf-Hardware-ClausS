@@ -4,11 +4,11 @@ PCB v1.1c retains the 74LVC541A IEC input buffer and BC847BS
 open-collector output stages of v1.1b. It adds a USB-C power input,
 a footprint for a 12-pin W5500 Mini Ethernet module, and two RGB headers.
 
+![Complete top view of PCB v1.1c](Images/PCB-v1.1c-KiCad-3D-top.png)
+
 ![PCB v1.1c with two Commodore IEC DIN sockets in the foreground](Images/PCB-v1.1c-IEC-perspective.png)
 
 *The two round 6-pin DIN sockets in the foreground connect to the Commodore IEC bus.*
-
-[Top view](Images/PCB-v1.1c-KiCad-3D-top.png)
 
 ## Power and connections
 

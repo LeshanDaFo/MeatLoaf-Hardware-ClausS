@@ -26,6 +26,8 @@ revision-independent index of the available design material.
 
 PCB v1.1a uses discrete BC847BS stages for the IEC inputs.
 
+![Complete top view of PCB v1.1a](Hardware/PCB-v1.1a/Images/PCB-v1.1a-KiCad-3D-top.png)
+
 ![PCB v1.1a with two Commodore IEC DIN sockets in the foreground](Hardware/PCB-v1.1a/Images/PCB-v1.1a-IEC-perspective.png)
 
 *The two round 6-pin DIN sockets in the foreground connect to the Commodore IEC bus.*
@@ -35,6 +37,8 @@ PCB v1.1a uses discrete BC847BS stages for the IEC inputs.
 PCB v1.1b replaces the discrete IEC input stages of v1.1a with a 74LVC541A
 buffer and retains the BC847BS output stages.
 
+![Complete top view of PCB v1.1b](Hardware/PCB-v1.1b/Images/PCB-v1.1b-KiCad-3D-top.png)
+
 ![PCB v1.1b with two Commodore IEC DIN sockets in the foreground](Hardware/PCB-v1.1b/Images/PCB-v1.1b-IEC-perspective.png)
 
 *The two round 6-pin DIN sockets in the foreground connect to the Commodore IEC bus.*
@@ -42,6 +46,8 @@ buffer and retains the BC847BS output stages.
 ### PCB v1.1c
 
 PCB v1.1c adds USB-C power, a plug-in W5500 Mini module and two RGB headers.
+
+![Complete top view of PCB v1.1c](Hardware/PCB-v1.1c/Images/PCB-v1.1c-KiCad-3D-top.png)
 
 ![PCB v1.1c with two Commodore IEC DIN sockets in the foreground](Hardware/PCB-v1.1c/Images/PCB-v1.1c-IEC-perspective.png)
 
