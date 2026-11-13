@@ -1,4 +1,4 @@
-# MeatLoaf PCB v1.1a
+# Meatloaf PCB v1.1a
 
 PCB v1.1a uses discrete BC847BS stages for the IEC inputs.
 The IEC outputs use separate BC847BS open-collector stages. The microSD
@@ -81,7 +81,7 @@ Use a module with suitable local power-on reset behavior.
 `J5` is intended for a serially addressable RGB LED module or short LED chain,
 not for a conventional four-wire analog RGB LED. The firmware drives GPIO48
 with the WS2812B protocol and GRB color order. It is configured for five LEDs
-by default; the LED count and brightness can be changed in the MeatLoaf LED
+by default; the LED count and brightness can be changed in the Meatloaf LED
 strip configuration.
 
 | J5 pin | Signal | Connection |

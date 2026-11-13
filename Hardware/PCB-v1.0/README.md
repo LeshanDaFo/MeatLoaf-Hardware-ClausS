@@ -1,4 +1,4 @@
-# MeatLoaf PCB v1.0
+# Meatloaf PCB v1.0
 
 This document contains the assembly and connection information specific to
 carrier-board revision **PCB v1.0**. Do not apply these details to another PCB

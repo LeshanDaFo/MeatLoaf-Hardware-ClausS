@@ -1,4 +1,4 @@
-# MeatLoaf-Hardware-ClausS
+# Meatloaf-Hardware-ClausS
 ## Nichtkommerzielle Hardwarelizenz und Rechtehinweis - Version 1.0
 
 Copyright © 2026 Claus Schlereth
@@ -9,7 +9,7 @@ Diese deutsche Fassung ist verbindlich. Die englische Fassung in `LICENSE.md` di
 
 **Lizenzgeber** ist Claus Schlereth, im Projekt auch unter der Bezeichnung "ClausS" auftretend, als Urheber der eigenen Projektmaterialien.
 
-**Eigene Projektmaterialien** sind diejenigen Schaltplan-, Leiterplatten-, Fertigungs-, Mechanik- und Dokumentationsdateien des Projekts MeatLoaf-Hardware-ClausS, die vom Lizenzgeber erstellt wurden, rechtlich von ihm kontrolliert werden und keinen abweichenden Urheber- oder Lizenzhinweis tragen.
+**Eigene Projektmaterialien** sind diejenigen Schaltplan-, Leiterplatten-, Fertigungs-, Mechanik- und Dokumentationsdateien des Projekts Meatloaf-Hardware-ClausS, die vom Lizenzgeber erstellt wurden, rechtlich von ihm kontrolliert werden und keinen abweichenden Urheber- oder Lizenzhinweis tragen.
 
 **Fremdmaterialien** sind sämtliche Dateien, Modelle, Bibliotheken, Symbole, Footprints, Bauteildaten, Software, Firmware, Marken und sonstigen Inhalte, die von Dritten erstellt oder kontrolliert werden.
 
@@ -83,9 +83,9 @@ Die entgeltliche Tätigkeit eines Fertigungsdienstleisters macht die ansonsten z
 
 Bei Veröffentlichung oder Weitergabe erfasster Materialien, Änderungen oder darauf beruhender Hardware müssen die folgenden Angaben in den Dateien erhalten bleiben oder in Begleitdokumentation, Verpackung oder über einen dauerhaften Projektlink angemessen zugänglich gemacht werden:
 
-- Projektname: MeatLoaf-Hardware-ClausS
+- Projektname: Meatloaf-Hardware-ClausS
 - Urheberhinweis: Copyright © 2026 Claus Schlereth
-- Ursprüngliches Repository: https://github.com/LeshanDaFo/MeatLoaf-Hardware-ClausS
+- Ursprüngliches Repository: https://github.com/LeshanDaFo/Meatloaf-Hardware-ClausS
 - Hinweis oder Link auf diese Lizenz
 
 Veränderte Fassungen müssen eindeutig als verändert gekennzeichnet werden. Es darf nicht behauptet oder der Eindruck erweckt werden, dass sie vom Lizenzgeber geprüft, freigegeben, hergestellt, gewährleistet oder empfohlen wurden.

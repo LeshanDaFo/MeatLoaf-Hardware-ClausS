@@ -1,4 +1,4 @@
-# MeatLoaf-Hardware-ClausS
+# Meatloaf-Hardware-ClausS
 ## Non-Commercial Hardware License and Rights Notice - Version 1.0
 
 Copyright © 2026 Claus Schlereth
@@ -9,7 +9,7 @@ This English text is a convenience translation. If it differs from the German te
 
 **Licensor** means Claus Schlereth, also identified in the project as "ClausS", as the author of the Original Project Materials.
 
-**Original Project Materials** means those schematic, PCB, manufacturing, mechanical, and documentation files in the MeatLoaf-Hardware-ClausS project that were created by the Licensor, are legally controlled by the Licensor, and do not carry a different copyright or license notice.
+**Original Project Materials** means those schematic, PCB, manufacturing, mechanical, and documentation files in the Meatloaf-Hardware-ClausS project that were created by the Licensor, are legally controlled by the Licensor, and do not carry a different copyright or license notice.
 
 **Third-Party Materials** means all files, models, libraries, symbols, footprints, component data, software, firmware, trademarks, and other content created or controlled by third parties.
 
@@ -83,9 +83,9 @@ The paid activity of a manufacturing service provider does not, by itself, make 
 
 When publishing or distributing covered materials, modifications, or hardware based on them, the following information must be retained in the files or made reasonably available in accompanying documentation, packaging, or a durable project link:
 
-- Project name: MeatLoaf-Hardware-ClausS
+- Project name: Meatloaf-Hardware-ClausS
 - Copyright notice: Copyright © 2026 Claus Schlereth
-- Original repository: https://github.com/LeshanDaFo/MeatLoaf-Hardware-ClausS
+- Original repository: https://github.com/LeshanDaFo/Meatloaf-Hardware-ClausS
 - Reference or link to this License
 
 Modified versions must be clearly identified as modified and must not be represented as reviewed, approved, manufactured, warranted, or endorsed by the Licensor.

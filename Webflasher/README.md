@@ -1,4 +1,4 @@
-# MeatLoaf Carrier Board Web Flasher
+# Meatloaf Carrier Board Web Flasher
 
 From this directory, run:
 

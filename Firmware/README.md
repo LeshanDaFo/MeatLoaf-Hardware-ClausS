@@ -1,8 +1,8 @@
-# MeatLoaf-Hardware-ClausS — Firmware
+# Meatloaf-Hardware-ClausS — Firmware
 
 This directory is for **prebuilt firmware packages** corresponding to the project's hardware revisions and ESP32-S3 memory variants.
 
-The underlying MeatLoaf firmware project is maintained at [idolpx/meatloaf](https://github.com/idolpx/meatloaf). These packages are project-specific builds; consult the upstream firmware license before redistribution.
+The underlying Meatloaf firmware project is maintained at [idolpx/meatloaf](https://github.com/idolpx/meatloaf). These packages are project-specific builds; consult the upstream firmware license before redistribution.
 
 ## Firmware variants
 
@@ -19,7 +19,7 @@ These are the **intended environment names**. Publish binaries only after their 
 
 The packages dated `20261029.06` are the current PCB v1.0 firmware update. They
 include the upstream SD-card SPI CRC initialization compatibility fix from
-[MeatLoaf pull request #69](https://github.com/idolpx/meatloaf/pull/69).
+[Meatloaf pull request #69](https://github.com/idolpx/meatloaf/pull/69).
 The packages dated `20261020.18` remain available as the historical initial
 release.
 
@@ -83,7 +83,7 @@ Use these methods first:
    example `ESP32-S3-WROOM-1-N8R8`. A label on the carrier PCB identifies a
    compatible board outline; it cannot identify the memory fitted to the
    removable module.
-2. **Use MeatLoaf `sysinfo`.** If working MeatLoaf firmware is already
+2. **Use Meatloaf `sysinfo`.** If working Meatloaf firmware is already
    installed, connect to its serial console and enter `sysinfo`. The output
    includes `Flash size` and `PSRAM size`.
 
@@ -230,14 +230,14 @@ automatically supported by those packages.
 
 ## Web flashing
 
-Open the [MeatLoaf Carrier Webflasher](https://leshandafo.github.io/MeatLoaf-Hardware-ClausS/) in desktop Chrome or Edge and select your PCB family and ESP32-S3 module.
+Open the [Meatloaf Carrier Webflasher](https://leshandafo.github.io/Meatloaf-Hardware-ClausS/) in desktop Chrome or Edge and select your PCB family and ESP32-S3 module.
 
 A flashable ZIP package can be installed using the web flasher at [meatloaf.cc](https://meatloaf.cc/) on a compatible browser and supported USB connection.
 
 1. Identify the PCB revision and the memory variant printed on the removable ESP32-S3 module. Do not infer the memory capacity from the carrier-board silkscreen; see [Identifying the memory variant](#identifying-the-memory-variant).
 2. Download the matching firmware ZIP from this repository or its GitHub Releases.
 3. Connect the board using its supported USB programming connector and a data-capable cable.
-4. Open the MeatLoaf web flasher in a browser with Web Serial support (typically Chrome or Edge).
+4. Open the Meatloaf web flasher in a browser with Web Serial support (typically Chrome or Edge).
 5. Choose **Connect**, select the board's serial device, and select the custom ZIP package using the site's upload workflow.
 6. Follow the flasher's instructions, then restart the board if required.
 
@@ -247,7 +247,7 @@ USB-UART drivers may be needed depending on the adapter and operating system (fo
 
 ## Flashing with PlatformIO
 
-If you have the matching MeatLoaf source tree and the named PlatformIO environments configured, use the commands below. Replace the port with the one detected on your computer.
+If you have the matching Meatloaf source tree and the named PlatformIO environments configured, use the commands below. Replace the port with the one detected on your computer.
 
 **PCB v1.0 — N16R8**
 

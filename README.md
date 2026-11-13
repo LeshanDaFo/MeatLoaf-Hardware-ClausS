@@ -1,10 +1,10 @@
-# MeatLoaf Hardware
+# Meatloaf Hardware
 
-Hardware designs and ready-to-flash firmware packages for the [MeatLoaf](https://github.com/idolpx/meatloaf) project.
+Hardware designs and ready-to-flash firmware packages for the [Meatloaf](https://github.com/idolpx/meatloaf) project.
 
-MeatLoaf is an ESP32-based interface for Commodore computers. It connects to the IEC serial bus and can provide access to disk images, SD-card files, network services, and other MeatLoaf firmware features.
+Meatloaf is an ESP32-based interface for Commodore computers. It connects to the IEC serial bus and can provide access to disk images, SD-card files, network services, and other Meatloaf firmware features.
 
-This repository contains an independent hardware implementation maintained by Claus Schlereth. The original MeatLoaf firmware is developed separately in the upstream MeatLoaf repository.
+This repository contains an independent hardware implementation maintained by Claus Schlereth. The original Meatloaf firmware is developed separately in the upstream Meatloaf repository.
 
 ## Available hardware revisions
 
@@ -64,7 +64,7 @@ The files under `Production/` are intended for PCB manufacturing and assembly. T
 
 ## Firmware
 
-[Open the MeatLoaf Carrier Webflasher](https://leshandafo.github.io/MeatLoaf-Hardware-ClausS/) to install firmware directly from your browser.
+[Open the Meatloaf Carrier Webflasher](https://leshandafo.github.io/Meatloaf-Hardware-ClausS/) to install firmware directly from your browser.
 
 Firmware packages are hardware-specific and may also differ by flash capacity,
 PSRAM capacity, GPIO assignments, and other board configuration details. A

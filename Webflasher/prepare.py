@@ -8,7 +8,7 @@ import struct
 from urllib.request import urlopen
 from zipfile import ZipFile
 
-RELEASES = "https://github.com/LeshanDaFo/MeatLoaf-Hardware-ClausS/releases/download"
+RELEASES = "https://github.com/LeshanDaFo/Meatloaf-Hardware-ClausS/releases/download"
 V11_COMMIT = "3a9d39908fd5d758952bdff338049fd054ee3a6e"
 CHECKSUMS = {
     ("v1.0", "n8r8"): "313cc5f8f5ba9d7ec5d6a6621394a7f2aaceb88999010a334d9d0aff28fca000",
@@ -70,7 +70,7 @@ def prepare(board, module, checksum, packages):
     directory.mkdir(parents=True, exist_ok=True)
     for name, image in images.items():
         (directory / name).write_bytes(image)
-    name = f"MeatLoaf Carrier {board} {module.upper()}"
+    name = f"Meatloaf Carrier {board} {module.upper()}"
     manifest = {
         "name": name,
         "version": metadata["version"],

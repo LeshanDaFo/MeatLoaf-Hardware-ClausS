@@ -1,4 +1,4 @@
-# MeatLoaf PCB v1.1b
+# Meatloaf PCB v1.1b
 
 PCB v1.1b replaces the discrete IEC input stages of [v1.1a](../PCB-v1.1a/README.md)
 with a 74LVC541A buffer. It retains the BC847BS open-collector output stages,

@@ -1,4 +1,4 @@
-# MeatLoaf PCB v1.1c
+# Meatloaf PCB v1.1c
 
 PCB v1.1c retains the 74LVC541A IEC input buffer and BC847BS
 open-collector output stages of v1.1b. It adds a USB-C power input,

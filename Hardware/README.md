@@ -1,7 +1,7 @@
-# MeatLoaf-Hardware-ClausS — Hardware
+# Meatloaf-Hardware-ClausS — Hardware
 
 This directory contains the hardware designs and production documentation for
-the MeatLoaf carrier-board revisions published in this repository.
+the Meatloaf carrier-board revisions published in this repository.
 
 ## Directory structure
 
@@ -35,11 +35,11 @@ Hardware/
 | PCB v1.1b | 74LVC541A IEC input buffer | [Design, GPIO assignments, and validation status](PCB-v1.1b/README.md) | [KiCad](PCB-v1.1b/KiCad/) · [3D assembly](PCB-v1.1b/3D/Meatloaf-PCB-v1.1b-Assembly.step) · [Production](PCB-v1.1b/Production/) · [Images](PCB-v1.1b/Images/) |
 | PCB v1.1c | USB-C power input and plug-in W5500 module | [Design and firmware](PCB-v1.1c/README.md) | [KiCad](PCB-v1.1c/KiCad/) · [3D assembly](PCB-v1.1c/3D/Meatloaf-PCB-v1.1c-Assembly.step) · [Production](PCB-v1.1c/Production/) · [Images](PCB-v1.1c/Images/) |
 
-![MeatLoaf PCB v1.1b development design](PCB-v1.1b/Images/PCB-v1.1b-KiCad-3D.png)
+![Meatloaf PCB v1.1b development design](PCB-v1.1b/Images/PCB-v1.1b-KiCad-3D.png)
 
 *KiCad rendering of the revised PCB v1.1b with the RGB level shifter.*
 
-![MeatLoaf PCB v1.1c](PCB-v1.1c/Images/PCB-v1.1c-KiCad-3D-perspective.png)
+![Meatloaf PCB v1.1c](PCB-v1.1c/Images/PCB-v1.1c-KiCad-3D-perspective.png)
 
 Each revision directory is self-contained and normally uses the following
 structure:
@@ -58,7 +58,7 @@ manufacturing outputs from different revisions.
 
 ## Hardware overview
 
-The project provides custom **ESP32-based MeatLoaf carrier boards**. Features,
+The project provides custom **ESP32-based Meatloaf carrier boards**. Features,
 module layouts, pin assignments, physical connections, and supported firmware
 may differ between revisions. Use the documentation inside the selected
 revision directory as the authoritative source for compatibility and assembly.

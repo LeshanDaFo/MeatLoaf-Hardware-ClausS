@@ -1,6 +1,6 @@
-# MeatLoaf PCB v1.0 firmware update — SD CRC compatibility
+# Meatloaf PCB v1.0 firmware update — SD CRC compatibility
 
-This update refreshes the prebuilt firmware packages for the MeatLoaf Hardware
+This update refreshes the prebuilt firmware packages for the Meatloaf Hardware
 PCB v1.0. It incorporates the SD-card SPI CRC initialization compatibility fix
 accepted upstream in
 [idolpx/meatloaf pull request #69](https://github.com/idolpx/meatloaf/pull/69).
@@ -32,7 +32,7 @@ Framework: ESP-IDF `5.5.3`
 ## Installation
 
 Select the ZIP that exactly matches the ESP32-S3 flash and PSRAM capacity.
-Install it with the existing custom-ZIP workflow in the MeatLoaf web flasher.
+Install it with the existing custom-ZIP workflow in the Meatloaf web flasher.
 The ZIP contains `release.json`, `bootloader.bin`, `partitions.bin`, `main.bin`,
 `update.bin`, and `storage.bin`, including all required flash offsets.
 
