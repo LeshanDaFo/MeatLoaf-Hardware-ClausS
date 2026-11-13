@@ -8,8 +8,6 @@ socket uses SPI2. The W5500 header uses SPI3.
 
 ![PCB v1.1a with two Commodore IEC DIN sockets in the foreground](Images/PCB-v1.1a-IEC-perspective.png)
 
-*The two round 6-pin DIN sockets in the foreground connect to the Commodore IEC bus.*
-
 ## Changes from PCB v1.0
 
 - **IEC:** v1.0 already separates CLK and DATA inputs and outputs. v1.1a

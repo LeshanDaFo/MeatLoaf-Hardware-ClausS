@@ -8,8 +8,6 @@ the W5500 header and the 5 V RGB data level shifter.
 
 ![PCB v1.1b with two Commodore IEC DIN sockets in the foreground](Images/PCB-v1.1b-IEC-perspective.png)
 
-*The two round 6-pin DIN sockets in the foreground connect to the Commodore IEC bus.*
-
 The rendering and STEP assembly include the female socket strips beneath the
 ESP32-S3 development board so that its installed height is represented.
 

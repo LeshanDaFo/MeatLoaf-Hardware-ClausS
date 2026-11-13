@@ -8,8 +8,6 @@ a footprint for a 12-pin W5500 Mini Ethernet module, and two RGB headers.
 
 ![PCB v1.1c with two Commodore IEC DIN sockets in the foreground](Images/PCB-v1.1c-IEC-perspective.png)
 
-*The two round 6-pin DIN sockets in the foreground connect to the Commodore IEC bus.*
-
 ## Power and connections
 
 - P1 is a 5 V USB-C power input. CC1 and CC2 each have a 5.1 kΩ pull-down.
