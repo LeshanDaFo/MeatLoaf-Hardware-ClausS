@@ -1,10 +1,12 @@
-# Meatloaf Hardware
+<img src="docs/images/meatloaf-logo.svg" alt="Meatloaf" width="220">
+
+# Meatloaf ESP32-S3 Carrier Board
 
 Hardware designs and ready-to-flash firmware packages for the [Meatloaf](https://github.com/idolpx/meatloaf) project.
 
 Meatloaf is an ESP32-based interface for Commodore computers. It connects to the IEC serial bus and can provide access to disk images, SD-card files, network services, and other Meatloaf firmware features.
 
-This repository contains an independent hardware implementation maintained by Claus Schlereth. The original Meatloaf firmware is developed separately in the upstream Meatloaf repository.
+This repository contains an independent hardware implementation designed and maintained by Claus Schlereth. The original Meatloaf firmware is developed separately in the upstream Meatloaf repository.
 
 ## Available hardware revisions
 
