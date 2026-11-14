@@ -4,6 +4,10 @@ This document contains the assembly and connection information specific to
 carrier-board revision **PCB v1.0**. Do not apply these details to another PCB
 revision without checking its own documentation.
 
+![PCB v1.0, assembled top view](Images/PCB-3D-Top.png)
+
+![PCB v1.0, IEC connector view](Images/PCB-3D-Perspective.png)
+
 ![PCB v1.0, top layout](Images/PCB-Top.png)
 
 ## Compatible ESP32-S3 development boards
